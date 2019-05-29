@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Leon Ochmann</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="My personal website.">
+		<meta name="referrer" content="no-referrer">
+		<meta name="geo.region" content="DE-BE">
+		<style type="text/css">
+			body {
+        --text-scale-factor: calc(1px + 1/18 * 1vmin);
+        --image-scale-factor: calc(1px + 1/9 * 1vmin);
+        margin: 0;
+        padding: 0;
+				text-align: center;
+				font-family: 'Times New Roman', serif;
+        background-color: white;
+        color: black;
+			}
+      #profile-picture {
+        margin:
+          calc(40 * var(--image-scale-factor)) auto
+          calc(30 * var(--image-scale-factor)) auto;
+        width: calc(160 * var(--image-scale-factor));
+        border-radius: calc(15 * var(--image-scale-factor));
+      }
+      h1 {
+        margin: 0 0 calc(2 * var(--text-scale-factor));
+        font-size: calc(27 * var(--text-scale-factor));
+        font-weight: normal;
+      }
+      a {
+        font-size: calc(15 * var(--text-scale-factor));
+        text-decoration: underline dotted;
+        color: black;
+      }
+      a:hover {
+        color: #999;
+      }
+		</style>
+	</head>
+	<body>
+    <img id="profile-picture" src="profile-picture.jpg" alt="My face.">
+    <h1>Leon Ochmann</h1>
+    <a href="https://github.com/stultiloquence">my github profile</a>
+	</body>
+</html>
