@@ -1,52 +1,64 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Leon Ochmann</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="My personal website.">
-		<meta name="referrer" content="no-referrer">
-		<meta name="geo.region" content="DE-BE">
-		<style type="text/css">
-			body {
+  <head>
+    <meta charset="utf-8">
+    <title>Leon Ochmann</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My personal website.">
+    <meta name="referrer" content="no-referrer">
+    <meta name="geo.region" content="DE-BE">
+    <style type="text/css">
+      body {
         --text-scale-factor: calc(1px + 1/18 * 1vmin);
-        --image-scale-factor: calc(1px + 1/9 * 1vmin);
+        --yellow: #f1c40f;
+        --bg: #080818;
         margin: 0;
         padding: 0;
-				text-align: center;
-				font-family: 'Times New Roman', serif;
-        background-color: white;
-        color: black;
-			}
-      #profile-picture {
-        margin:
-          calc(40 * var(--image-scale-factor)) auto
-          calc(30 * var(--image-scale-factor)) auto;
-        width: calc(160 * var(--image-scale-factor));
-        border-radius: calc(15 * var(--image-scale-factor));
+
+        background-color: var(--bg);
+        color: var(--yellow);
+
+        font-size: calc(21 * var(--text-scale-factor));
+        line-height: 2;
+        font-family: 'Impact', sans-serif;
+        font-style: italic;
+        letter-spacing: .3em;
       }
       h1 {
         margin: 0;
-        font-size: calc(27 * var(--text-scale-factor));
+        padding-left: 0.5em;
+        font-size: 1em;
         font-weight: normal;
       }
-      p {
-        margin: calc(6 * var(--text-scale-factor)) 0;
+      #stylized-list {
+        margin: 0;
+        padding: 0;
+        max-width: 500px;
+        list-style-type: none;        
+      }
+      #stylized-list > li {
+        padding-left: 0.5em;
+        background-image: linear-gradient(105deg, var(--yellow) 0% 50%, transparent 50% 100%);
+        background-size: 210% 100%;
+        background-position: 100% 0%;
+        transition: background-position .3s ease-out;
+      }
+      #stylized-list > li:hover {
+        background-position: 20% 0%;
       }
       a {
-        font-size: calc(15 * var(--text-scale-factor));
-        text-decoration: underline dotted;
-        color: black;
+        text-decoration: none;
+        color: white;
       }
-      a:hover {
-        color: #999;
-      }
-		</style>
-	</head>
-	<body>
-    <img id="profile-picture" src="profile-picture.jpg" alt="My face.">
-    <h1>Leon Ochmann</h1>
-    <p><a href="https://github.com/stultiloquence">github profile</a></p>
-    <p><a href="mathe-ag/">mathe-ag</a></p>
-	</body>
+    </style>
+  </head>
+  <body>
+    <h1>leon ochmann</h1>
+    <ul id="stylized-list">
+      <li><a href="https://github.com/stultiloquence">⯈ github profile</a></li>
+      <li><a href="mathe-ag/">⯈ mathe-ag</a></li>
+      <li><a href="dnd/">⯈ dnd stuff</a></li>
+      <li><a href="profile-picture.jpg">⯈ my face</a></li>
+    </ul>
+  </body>
 </html>
